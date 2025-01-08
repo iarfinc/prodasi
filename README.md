@@ -1,6 +1,7 @@
 # PSD-Fakultas Design-2025
 
-XAMPP Control Panel > Start 
+XAMPP Control Panel > 
+Start > 
 Apache ✔
 MySQL ✔
 -----------------------------------------
