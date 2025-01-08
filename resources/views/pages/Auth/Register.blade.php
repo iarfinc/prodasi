@@ -1,6 +1,6 @@
 @extends('layouts.auth')
 @section('content')
-    <div class="row h-100">
+    <div class="row h-100" style="display: flex; align-items: center; justify-content: center;">
         <div class="col-lg-5 col-12">
             <div id="auth-left">
                 <div class="auth-logo">
