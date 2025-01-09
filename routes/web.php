@@ -33,11 +33,6 @@ Route::group(['middleware' => ['auth', 'prevent-back']], function () {
     Route::post('/profile/update', [DashboardController::class, 'updateProfile'])->name('updateProfile');
 
     Route::group(['middleware' => ['role:Admin']], function () {
-        
-        Route::get('/kandidat', [kandidatController::class, 'index'])->name('kandidat');
-        Route::get('/kandidat', [kandidatController::class, 'index'])->name('kandidat');
-        Route::get('/diterima', [kandidatController::class, 'diterima'])->name('diterima');
-        Route::get('/ditolak', [kandidatController::class, 'ditolak'])->name('ditolak');
         Route::get('/users/{filter?}', [UsersController::class, 'index'])
         ->where('filter', '^(User|Admin)?$')
         ->name('users');
