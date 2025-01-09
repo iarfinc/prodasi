@@ -34,8 +34,8 @@ class Controller extends BaseController
         }
             
         return [
-            'page_name' => 'Formulir Pendaftaran',
-            'page_subname' => 'Selamat datang di Menu Pendaftaan.',
+            'page_name' => 'Project Data Sains',
+            'page_subname' => 'Selamat datang di PSD.',
             'page_breadcum' => [],
         ];
     }
