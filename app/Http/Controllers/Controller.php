@@ -28,7 +28,7 @@ class Controller extends BaseController
         if (auth()->check() && auth()->user()->role == 'User') {
             $data = [];
             $data['page_name'] = 'Dashboard';
-            $data['page_subname'] = 'Status Absensi';
+            $data['page_subname'] = 'Status';
             $data['page_breadcum'] = [['name' => 'Dashboard','link' => route('dashboard'),'status' => '']];
             return $data;
         }
