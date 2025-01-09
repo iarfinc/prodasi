@@ -71,7 +71,6 @@ class User extends Authenticatable
         $data = $request->except($exception);
         $data['updated_at'] = date('Y-m-d H:i:s');
     
-        // Log data sebelum update
         \Log::info('Data untuk update:', $data);
     
         return self::where('id', $id)->update($data);

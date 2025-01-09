@@ -9,7 +9,7 @@ use Validator;
 
 class LoginController extends Controller
 {
-    //
+
 
     
     public function __construct(){
@@ -21,7 +21,6 @@ class LoginController extends Controller
     public function auth(Request $request) {
         $credentials = $request->only('email', 'password');
     
-        // Debugging untuk cek input
         \Log::info($credentials);
     
         if (Auth::attempt($credentials)) {

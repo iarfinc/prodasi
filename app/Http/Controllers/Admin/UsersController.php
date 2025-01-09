@@ -110,7 +110,6 @@ class UsersController extends Controller
             return redirect()->back()->withErrors($validate)->withInput();
         }
     
-        // Update password jika ada
         if ($request->filled('password')) {
             $request->merge(['password' => Hash::make($request['password'])]);
         }
@@ -148,16 +147,5 @@ class UsersController extends Controller
             \Log::warning("File not found or not a file: $filePath");
         }
     }
-
-    $kandidatDiterima = KandidatDiterima::where('email', $oldData->email)->first();
-    if ($kandidatDiterima) {
-        $kandidatDiterima->delete();
     }
-
-
-        return User::deleteData($id) ?
-        redirect()->route('users.index')->with('sukses', 'Berhasil menghapus pengguna') :
-        redirect()->back()->with('error', 'Oops, Something Went Wrong, Please Try again');
-    }
-
-    }
+}
