@@ -11,6 +11,7 @@ $(function () {
           confirmButtonColor: "#3085d6",
           cancelButtonColor: "#d33",
           confirmButtonText: "Ya",
+          cancelButtonText: "Tidak",
       }).then((result) => {
         if (result.isConfirmed) {
          window.location = link;
@@ -29,6 +30,7 @@ $(function () {
             confirmButtonColor: "#3085d6",
             cancelButtonColor: "#d33",
             confirmButtonText: "Ya",
+            cancelButtonText: "Tidak",
         }).then((result) => {
           if (result.isConfirmed) {
            form.submit();
