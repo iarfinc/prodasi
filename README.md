@@ -7,6 +7,7 @@ MySQL ✔
 -----------------------------------------
 Do this before open CMD
 > > example.env > rename > .env
+
 Directory > Project > CMD
 Use following
 - - - composer install
