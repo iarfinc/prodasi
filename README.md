@@ -5,9 +5,10 @@ Start >
 Apache ✔
 MySQL ✔
 -----------------------------------------
+Do this before open CMD
+> > example.env > rename > .env
 Directory > Project > CMD
 Use following
-- example.env > rename > .env
 - - - composer install
 - - - - php artisan migrate
 - - - - - php artisan db:seed
