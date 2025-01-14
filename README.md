@@ -7,9 +7,11 @@ MySQL ✔
 -----------------------------------------
 Directory > Project > CMD
 Use following
-- php artisan migrate
-- - php artisan db:seed
-- - - php artisan serve
+- example.env > rename > .env
+- - - composer install
+- - - - php artisan migrate
+- - - - - php artisan db:seed
+- - - - - - php artisan serve
 -----------------------------------------
 > > Credential Login
 
